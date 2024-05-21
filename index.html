@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <script src="sketch.js">
+
+const c = document.getElementById("myCanvas");
+const ctx = c.getContext("2d");
+
+// Create linear gradient
+const grad=ctx.createLinearGradient(0,0,0,130);
+grad.addColorStop(0, "lightblue");
+grad.addColorStop(1, "darkblue"); 
+
+// Fill rectangle with gradient
+ctx.fillStyle = grad;
+ctx.fillRect(10,10,280,130);
+
+    </script>
+  </body>
+</html>
