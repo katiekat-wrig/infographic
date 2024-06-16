@@ -13,12 +13,12 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(800, 1200);
+  createCanvas(800, 1250);
 }
 
 function draw() {
   background(225);
-  image(bkg, 0, 0, 800, 1200)
+  image(bkg, 0, 0, 800, 1250)
 
   //Heading
   image(moonandcloud, 10, 0, 385, 320)
@@ -98,7 +98,7 @@ function draw() {
    textSize(20);
    textFont(font);
 
-   text("Description. Lasts apx. 10-60 minutes.", 50, 1125);
+   text("Often referred to as paradoxical sleep. This is the period of sleep where \ndreaming occurs, and is marked by rapid movements of the eyes. \nLasts apx. 10-60 minutes.", 50, 1125);
   pop(); 
   
 }
