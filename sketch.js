@@ -104,7 +104,18 @@ function draw() {
 
   // Display hover image if set
   if (hoverImage) {
-    image(hoverImage.img, hoverImage.x, hoverImage.y);
+    let imgX = hoverImage.x;
+    let imgY = hoverImage.y;
+
+    // Ensure the image stays within the canvas boundaries
+    if (imgX + hoverImage.img.width > width) {
+      imgX = width - hoverImage.img.width;
+    }
+    if (imgY + hoverImage.img.height > height) {
+      imgY = height - hoverImage.img.height;
+    }
+
+    image(hoverImage.img, imgX, imgY);
   }
 }
 
