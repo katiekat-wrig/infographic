@@ -1,3 +1,6 @@
+//Kat W
+//Spring 2024
+
 let bkg, star1, star2, starring, moonandcloud, stage1, stage2, stage3, rem, font;
 let hoverImage = null;
 
