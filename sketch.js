@@ -1,4 +1,4 @@
-let bkg, star1, star2, starring, moonandcloud, font;
+let bkg, star1, star2, starring, moonandcloud, stage1, stage2, stage3, rem, font;
 
 function preload() {
   bkg = loadImage ("Images/Background.svg");
